@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel modelVersion="1.0" productVersion="7.8.4">
+    <businessObjects>
+        <businessObject qualifiedName="com.htc.model.ArquitectoProy">
+            <fields>
+                <field type="STRING" length="255" name="nombre" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="apellido" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="idUsuario" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="activo" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="presentaObservaciones" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="razonAsignacion" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.htc.model.DocArquitecto" fetchType="LAZY" name="lstDocumentos" nullable="true" collection="true"/>
+                <field type="LONG" length="255" name="caso" nullable="true" collection="false"/>
+                <field type="STRING" length="155" name="observaciones" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="email" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="colaborar" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="motivoNoColaboracion" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.htc.model.Cliente">
+            <fields>
+                <field type="STRING" length="255" name="nombreCliente" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.htc.model.TipoCliente" fetchType="LAZY" name="tipoCliente" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.htc.model.Prioridad" fetchType="LAZY" name="prioridad" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nombreContacto" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="correoContacto" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="telefonoContacto" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="activo" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.htc.model.Configuracion">
+            <fields>
+                <field type="STRING" length="255" name="clave" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="valor" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints>
+                <uniqueConstraint name="UNIQUE_CONSTRAINT_1">
+                    <fieldNames>
+                        <fieldName>clave</fieldName>
+                    </fieldNames>
+                </uniqueConstraint>
+            </uniqueConstraints>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.htc.model.DocArquitecto">
+            <description>Documentos propuestas</description>
+            <fields>
+                <relationField type="AGGREGATION" reference="com.htc.model.TipoDocumento" fetchType="LAZY" name="tipoDocumento" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="descripcion" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="documentType" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="correlativo" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="caso" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="idUsuario" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.htc.model.GrupoTipoDoc" fetchType="LAZY" name="grupoTipo" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.htc.model.DocProy">
+            <description>Documentos del proyecto</description>
+            <fields>
+                <relationField type="AGGREGATION" reference="com.htc.model.TipoDocumento" fetchType="LAZY" name="tipoDocumento" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="descripcion" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="documentType" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="correlativo" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="caso" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="idUsuario" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.htc.model.GrupoTipoDoc" fetchType="EAGER" name="grupoTipo" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.htc.model.Estado">
+            <fields>
+                <field type="STRING" length="255" name="nombreEstado" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="activo" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries>
+                <query name="findCierre" content="SELECT e&#xD;&#xA;FROM Estado e &#xD;&#xA;WHERE e.persistenceId = 6&#xD;&#xA;OR e.persistenceId = 9&#xD;&#xA;ORDER BY e.persistenceId ASC" returnType="java.util.List">
+                    <queryParameters/>
+                </query>
+            </queries>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.htc.model.Grupo">
+            <fields>
+                <field type="STRING" length="255" name="nombreGrupo" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="activo" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.htc.model.GrupoTipoDoc">
+            <fields>
+                <relationField type="AGGREGATION" reference="com.htc.model.TipoDocumento" fetchType="EAGER" name="lstTipoDocumento" nullable="true" collection="true"/>
+                <relationField type="AGGREGATION" reference="com.htc.model.Grupo" fetchType="EAGER" name="grupoDocumento" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="activo" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="defecto" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="obligatorio" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="etapa" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.htc.model.TipoDocumento" fetchType="EAGER" name="tDocDefecto" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries>
+                <query name="findByActivoEtapa" content="SELECT g &#xA;FROM GrupoTipoDoc g &#xA;WHERE g.activo = :activo&#xA;AND g.etapa = :etapa&#xA;ORDER BY g.persistenceId ASC" returnType="java.util.List">
+                    <queryParameters>
+                        <queryParameter name="activo" className="java.lang.Boolean"/>
+                        <queryParameter name="etapa" className="java.lang.String"/>
+                    </queryParameters>
+                </query>
+                <query name="countForFindByActivoEtapa" content="SELECT count(g)&#xD;&#xA;FROM GrupoTipoDoc g &#xD;&#xA;WHERE g.activo = :activo&#xD;&#xA;AND g.etapa = :etapa" returnType="java.lang.Long">
+                    <queryParameters>
+                        <queryParameter name="activo" className="java.lang.Boolean"/>
+                        <queryParameter name="etapa" className="java.lang.String"/>
+                    </queryParameters>
+                </query>
+            </queries>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.htc.model.LiderProy">
+            <fields>
+                <field type="LONG" length="255" name="usuario" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nombres" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="apellidos" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="razonAsignacion" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="email" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.htc.model.PreVentaProy">
+            <fields>
+                <field type="LONG" length="255" name="idUsuario" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nombres" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="apellidos" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="activo" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="caso" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="email" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="asignarGerencia" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.htc.model.Prioridad">
+            <fields>
+                <field type="STRING" length="255" name="nombrePrioridad" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="corPrioridad" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="activo" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.htc.model.SolicitudProy">
+            <description>Tabla que contiene los terminos de referencia  de las necesidades identificadas.</description>
+            <fields>
+                <field type="LONG" length="255" name="casoId" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="idUsuarioInicial" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="codigoInterno" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="fechaIngreso" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.htc.model.Estado" fetchType="LAZY" name="estado" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nombreProyecto" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.htc.model.Cliente" fetchType="LAZY" name="cliente" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="fechaPresentacion" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="salesCloudId" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="salesCloudDate" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="pipeline" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="alcance" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="consideracion" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="idVendedor" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="solicitud" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="abortar" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="presentacion" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="elaboradaPoc" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="apoyo" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="lideresAsignados" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="modificarPropuesta" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="comentarioVenta" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.htc.model.PreVentaProy" fetchType="LAZY" name="lstPreventa" nullable="true" collection="true"/>
+                <field type="LOCALDATE" length="255" name="fechaIngresoOT" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="fechaIngresoPro" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.htc.model.Estado" fetchType="LAZY" name="estadoPro" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.htc.model.ArquitectoProy" fetchType="LAZY" name="lstArquitecto" nullable="true" collection="true"/>
+                <relationField type="COMPOSITION" reference="com.htc.model.DocProy" fetchType="LAZY" name="lstDocumentos" nullable="true" collection="true"/>
+                <relationField type="AGGREGATION" reference="com.htc.model.Estado" fetchType="LAZY" name="estadoPoc" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.htc.model.LiderProy" fetchType="LAZY" name="lstLideres" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="comentarioFinal" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.htc.model.Estado" fetchType="LAZY" name="estadoCierre" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.htc.model.TipoCliente">
+            <fields>
+                <field type="STRING" length="255" name="tipo" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="descripcion" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="activo" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.htc.model.TipoDocumento">
+            <fields>
+                <field type="STRING" length="255" name="tipoDocumento" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="activo" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>

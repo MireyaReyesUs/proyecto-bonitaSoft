@@ -1,0 +1,20 @@
+
+<div ng-class="{
+    'form-horizontal': properties.labelPosition === 'left' && !properties.labelHidden,
+    'row': properties.labelPosition === 'top' && !properties.labelHidden || properties.labelHidden
+    }">
+    <div class="form-group">
+        <label
+            ng-if="!properties.labelHidden"
+            ng-class="{ 'control-label--required': properties.required }"
+            class="control-label col-xs-{{ !properties.labelHidden && properties.labelPosition === 'left' ? properties.labelWidth : 12 }}">
+            {{ properties.label | uiTranslate }}
+        </label>
+        <div class="col-xs-{{ 12 - (!properties.labelHidden && properties.labelPosition === 'left' ? properties.labelWidth : 0) }}">
+            <text-angular
+            ng-model="properties.value" name="{{ctrl.name}}" data-ng-required="properties.required"  ta-disabled='properties.readOnly'></text-angular>            
+            
+        </div>
+    </div>
+</div>
+

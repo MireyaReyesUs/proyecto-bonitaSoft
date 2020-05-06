@@ -1,0 +1,57 @@
+{
+  "designerVersion" : "1.10.44",
+  "id" : "customInputGroup",
+  "name" : "InputGroup",
+  "lastUpdate" : 1585008861165,
+  "template" : "@customInputGroup.tpl.html",
+  "controller" : "@customInputGroup.ctrl.js",
+  "custom" : true,
+  "properties" : [
+    {
+      "label" : "Value",
+      "name" : "value",
+      "type" : "text",
+      "defaultValue" : "This is the initial value",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Read-only",
+      "name" : "readOnly",
+      "type" : "boolean",
+      "defaultValue" : true,
+      "bond" : "expression"
+    },
+    {
+      "label" : "Span",
+      "name" : "span",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Required",
+      "name" : "required",
+      "help" : "In the context of a form container, use $form.$invalid as a Boolean to check form validity in a widget property",
+      "type" : "boolean",
+      "defaultValue" : true,
+      "bond" : "expression"
+    },
+    {
+      "label" : "Value Min Length",
+      "name" : "minLength",
+      "help" : "In the context of a form container, use $form.$invalid as a Boolean to check form validity in a widget property",
+      "type" : "integer",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Value Max Length",
+      "name" : "maxLength",
+      "help" : "In the context of a form container, use $form.$invalid as a Boolean to check form validity in a widget property",
+      "type" : "integer",
+      "bond" : "expression"
+    }
+  ],
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

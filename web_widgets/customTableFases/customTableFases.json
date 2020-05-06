@@ -1,0 +1,143 @@
+{
+  "designerVersion" : "1.10.12",
+  "previousDesignerVersion" : "1.8.40",
+  "id" : "customTableFases",
+  "name" : "tableFases",
+  "lastUpdate" : 1582203764877,
+  "template" : "@customTableFases.tpl.html",
+  "icon" : "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 20'><g><path fill='#CBD5E1' d='M36,15v2h11v-2H36z M40,10v2h7v-2H40z M11,10v2h14v-2H11z M3,10v2h3v-2H3z M11,15v2h17v-2H11z M3,15v2h3 v-2H3z'/><path fill='#fff' d='M1,19V1h48v18H1z M0,0v20h50V0H0z'/><path fill='#CBD5E1' d='M1,7v1h7v11h1V8h22v11h1V8h17V7H32V1h-1v6H9V1H8v6H1z'/><path fill='#fff' d='M35,3h12v2H35V3z M11,3h13v2H11V3z M3,3h3v2H3V3z'/></g></svg>",
+  "controller" : "@customTableFases.ctrl.js",
+  "description" : "Tabular presentation of data from an array",
+  "custom" : true,
+  "order" : 17,
+  "properties" : [
+    {
+      "label" : "Headers",
+      "name" : "headers",
+      "caption" : "Comma-separated list",
+      "help" : "If you specify an expression, the result must be an array of strings",
+      "type" : "collection",
+      "defaultValue" : [
+        "Id",
+        "Name",
+        "Description",
+        "Date"
+      ],
+      "bond" : "expression"
+    },
+    {
+      "label" : "Content",
+      "name" : "content",
+      "help" : "Array used to populate the table. Can be a list of objects. Use 'Column keys' to refine content",
+      "type" : "collection",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Column keys",
+      "name" : "columnsKey",
+      "caption" : "Use <a href=\"javascript:void(0);\" open-help=\"filters\" editor-mode=\"page\">Filters</a> to format the data (e.g. <span ng-non-bindable>columnKey|uiDate</span>)",
+      "help" : "When 'Content' is a list of objects, specifies the attributes to display in the table columns",
+      "type" : "collection",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Selected Row",
+      "name" : "selectedRow",
+      "type" : "text",
+      "bond" : "variable"
+    },
+    {
+      "label" : "totalItems",
+      "name" : "totalItems",
+      "type" : "integer",
+      "bond" : "expression"
+    },
+    {
+      "label" : "currentPage",
+      "name" : "currentPage",
+      "type" : "text",
+      "bond" : "variable"
+    },
+    {
+      "label" : "maxSize",
+      "name" : "maxSize",
+      "type" : "integer",
+      "defaultValue" : 5,
+      "bond" : "expression"
+    },
+    {
+      "label" : "itemsPerPage",
+      "name" : "itemsPerPage",
+      "type" : "integer",
+      "defaultValue" : 5,
+      "bond" : "expression"
+    },
+    {
+      "label" : "firstText",
+      "name" : "firstText",
+      "type" : "text",
+      "defaultValue" : "Primero",
+      "bond" : "expression"
+    },
+    {
+      "label" : "lastText",
+      "name" : "lastText",
+      "type" : "text",
+      "defaultValue" : "Último",
+      "bond" : "expression"
+    },
+    {
+      "label" : "previousText",
+      "name" : "previousText",
+      "type" : "text",
+      "defaultValue" : "Anterior",
+      "bond" : "expression"
+    },
+    {
+      "label" : "nextText",
+      "name" : "nextText",
+      "type" : "text",
+      "defaultValue" : "Siguiente",
+      "bond" : "expression"
+    },
+    {
+      "label" : "linkColumn",
+      "name" : "linkColumn",
+      "type" : "collection",
+      "defaultValue" : [
+        "nombreProyecto"
+      ],
+      "bond" : "expression"
+    },
+    {
+      "label" : "linkComunnData",
+      "name" : "linkColumnData",
+      "type" : "collection",
+      "defaultValue" : [
+        "persistenceId"
+      ],
+      "bond" : "expression"
+    }
+  ],
+  "assets" : [
+    {
+      "id" : "88b93126-aead-4d2c-acdf-5f19238bb8de",
+      "name" : "ui-bootstrap-tpls-0.14.3.min.js",
+      "type" : "js",
+      "order" : 2,
+      "external" : false
+    },
+    {
+      "id" : "dcec568e-7ef1-41ad-b16f-de7209579344",
+      "name" : "table.css",
+      "type" : "css",
+      "order" : 1,
+      "external" : false
+    }
+  ],
+  "requiredModules" : [
+    "ui.bootstrap"
+  ],
+  "type" : "widget",
+  "hasHelp" : false
+}

@@ -1,0 +1,11 @@
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text"><b>{{ properties.span }}</b></span>
+    </div>
+    <input 
+        ng-model="properties.value"
+        ng-required="properties.required"
+        ng-minlength="properties.minLength"
+        ng-maxlength="properties.maxLength"
+        ng-readonly="properties.readOnly">
+</div>

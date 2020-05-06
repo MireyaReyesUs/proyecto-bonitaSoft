@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="HTC" description="Hightech Consulting">
+  <customUserInfoDefinitions>
+    <customUserInfoDefinition>
+      <name>dui</name>
+      <description>Documento Unico de Identidad</description>
+    </customUserInfoDefinition>
+    <customUserInfoDefinition>
+      <name>especialidad</name>
+      <description>Educación</description>
+    </customUserInfoDefinition>
+  </customUserInfoDefinitions>
+  <users>
+    <user userName="mmunoz@hightech-corp.com">
+      <firstName>Mireya</firstName>
+      <lastName>Munoz</lastName>
+      <jobTitle>Software Developer</jobTitle>
+      <manager>yalvarado@hightech-corp.com</manager>
+      <personalData>
+        <country>El Salvador</country>
+      </personalData>
+      <professionalData>
+        <country>El Salvador</country>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>dui</name>
+          <value>038012421</value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="yalvarado@hightech-corp.com">
+      <firstName>Yaneth </firstName>
+      <lastName>Alvarado</lastName>
+      <manager>osilva@hightech-corp.com</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>dui</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="ecortez@hightech-corp.com">
+      <firstName>Eduardo</firstName>
+      <lastName>Cortez</lastName>
+      <manager>osilva@hightech-corp.com</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>dui</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="nnavarro@hightech-corp.com">
+      <firstName>Nelson</firstName>
+      <lastName>Navarro</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>dui</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="ycruz@hightech-corp.com">
+      <firstName>Yris</firstName>
+      <lastName>Cruz</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>dui</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value>educacion</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="mlopez@hightech-corp.com">
+      <firstName>Melissa</firstName>
+      <lastName>Lopez</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>dui</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="osilva@hightech-corp.com">
+      <firstName>Osmaro</firstName>
+      <lastName>Silva</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>dui</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="csalazar@hightech-corp.com">
+      <firstName>César</firstName>
+      <lastName>Salazar</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>dui</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="opacheco@hightech-corp.com">
+      <firstName>Oscar</firstName>
+      <lastName>Pacheco</lastName>
+      <manager>yalvarado@hightech-corp.com</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>dui</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="epineda@hightech-corp.com.com">
+      <firstName>Edenilson</firstName>
+      <lastName>Pineda</lastName>
+      <manager>yalvarado@hightech-corp.com</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>dui</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="emelendez@hightech-corp.com">
+      <firstName>Eduardo</firstName>
+      <lastName>Meléndez</lastName>
+      <manager>yalvarado@hightech-corp.com</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>dui</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="rventura@hightech-corp.com">
+      <firstName>Ronald</firstName>
+      <lastName>Ventura</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>dui</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="sayala@hightech-corp.com">
+      <firstName>Samuel</firstName>
+      <lastName>Ayala</lastName>
+      <manager>csalazar@hightech-corp.com</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>dui</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="fhernandez@hightech-corp.com">
+      <firstName>Fernando</firstName>
+      <lastName>Hernández</lastName>
+      <manager>csalazar@hightech-corp.com</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>dui</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="srodriguez@hightech-corp.com">
+      <firstName>Stanley</firstName>
+      <lastName>Rodríguez</lastName>
+      <manager>osilva@hightech-corp.com</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>dui</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="karevalo@hightech-corp.com">
+      <firstName>Kevin</firstName>
+      <lastName>Arévalo</lastName>
+      <manager>osilva@hightech-corp.com</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>dui</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="vhuezo@hightech-corp.com">
+      <firstName>Victor</firstName>
+      <lastName>Huezo</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>dui</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="hmartinez@hightech-corp.com">
+      <firstName>Henry</firstName>
+      <lastName>Martínez</lastName>
+      <manager>yalvarado@hightech-corp.com</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>dui</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="lgrimaldi@hightech-corp.com">
+      <firstName>Lorenzo</firstName>
+      <lastName>Grimaldi</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>dui</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="mzayas@hightech-corp.com">
+      <firstName>Marcos</firstName>
+      <lastName>Zayas</lastName>
+      <manager>csalazar@hightech-corp.com</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>dui</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="mvidal@hightech-corp.com">
+      <firstName>Marvin</firstName>
+      <lastName>Vidal</lastName>
+      <manager>csalazar@hightech-corp.com</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>dui</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>especialidad</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+  </users>
+  <roles>
+    <role name="miembro">
+      <displayName>miembro</displayName>
+    </role>
+    <role name="lider">
+      <displayName>lider</displayName>
+    </role>
+    <role name="arquitecto">
+      <displayName>arquitecto</displayName>
+    </role>
+    <role name="preventa">
+      <displayName>preventa</displayName>
+    </role>
+    <role name="vendedor">
+      <displayName>vendedor</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="HTC">
+      <displayName>HTC</displayName>
+    </group>
+    <group name="direccionOperaciones" parentPath="/HTC">
+      <displayName>Direccion de Operaciones</displayName>
+    </group>
+    <group name="direccionComercial" parentPath="/HTC">
+      <displayName>Direccion Comercial</displayName>
+    </group>
+    <group name="PMO" parentPath="/HTC/direccionOperaciones">
+      <displayName>PMO</displayName>
+    </group>
+    <group name="gerenciaDeSoporte" parentPath="/HTC/direccionOperaciones">
+      <displayName>Gerencia de Soporte</displayName>
+    </group>
+    <group name="gerenciaDeArquitecturaYDesarrollo" parentPath="/HTC/direccionOperaciones">
+      <displayName>Gerencia De Arquitectura y Desarrollo</displayName>
+    </group>
+    <group name="projectManagerSenior" parentPath="/HTC/direccionOperaciones/PMO">
+      <displayName>Project Manager Senior</displayName>
+    </group>
+    <group name="projectManagerJunior" parentPath="/HTC/direccionOperaciones/PMO">
+      <displayName>Project Manager Junior</displayName>
+    </group>
+    <group name="Middleware" parentPath="/HTC/direccionOperaciones/gerenciaDeSoporte">
+      <displayName>Middleware</displayName>
+    </group>
+    <group name="CRM" parentPath="/HTC/direccionOperaciones/gerenciaDeSoporte">
+      <displayName>CRM</displayName>
+    </group>
+    <group name="baseDeDatos" parentPath="/HTC/direccionOperaciones/gerenciaDeSoporte">
+      <displayName>Base De Datos</displayName>
+    </group>
+    <group name="BI" parentPath="/HTC/direccionOperaciones/gerenciaDeSoporte">
+      <displayName>BI</displayName>
+    </group>
+    <group name="Arquitectura" parentPath="/HTC/direccionOperaciones/gerenciaDeArquitecturaYDesarrollo">
+      <displayName>Arquitectura</displayName>
+    </group>
+    <group name="Software Factory" parentPath="/HTC/direccionOperaciones/gerenciaDeArquitecturaYDesarrollo">
+      <displayName>Software Factory</displayName>
+    </group>
+    <group name="Testing" parentPath="/HTC/direccionOperaciones/gerenciaDeArquitecturaYDesarrollo">
+      <displayName>Testing</displayName>
+    </group>
+    <group name="Ventas" parentPath="/HTC/direccionComercial">
+      <displayName>Ventas</displayName>
+    </group>
+    <group name="administracionFinanzas" parentPath="/HTC/direccionComercial">
+      <displayName>Administracion y Finanzas</displayName>
+    </group>
+    <group name="mercadeoy Comunicaciones" parentPath="/HTC/direccionComercial">
+      <displayName>Mercadeo y Comunicaciones</displayName>
+    </group>
+    <group name="arquitectoDeSoluciones" parentPath="/HTC/direccionComercial/Ventas">
+      <displayName>Arquitecto de Soluciones</displayName>
+    </group>
+    <group name="Educacion" parentPath="/HTC/direccionComercial/Ventas">
+      <displayName>Educacion</displayName>
+    </group>
+    <group name="Administracion" parentPath="/HTC/direccionComercial/administracionFinanzas">
+      <displayName>Administracion</displayName>
+    </group>
+    <group name="Contabilidad" parentPath="/HTC/direccionComercial/administracionFinanzas">
+      <displayName>Contabilidad</displayName>
+    </group>
+    <group name="facturacionCompras" parentPath="/HTC/direccionComercial/administracionFinanzas">
+      <displayName>Facturacion y Compras</displayName>
+    </group>
+    <group name="disenadorGrafico" parentPath="/HTC/direccionComercial/mercadeoy Comunicaciones">
+      <displayName>Diseñador Grafico</displayName>
+    </group>
+    <group name="PreVentas" parentPath="/HTC/direccionComercial/Ventas">
+      <displayName>Pre-Ventas</displayName>
+    </group>
+    <group name="VentasPBS" parentPath="/HTC/direccionComercial/Ventas">
+      <displayName>VentasPBS</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>mmunoz@hightech-corp.com</userName>
+      <roleName>miembro</roleName>
+      <groupName>Testing</groupName>
+      <groupParentPath>/HTC/direccionOperaciones/gerenciaDeArquitecturaYDesarrollo</groupParentPath>
+    </membership>
+    <membership>
+      <userName>yalvarado@hightech-corp.com</userName>
+      <roleName>arquitecto</roleName>
+      <groupName>Arquitectura</groupName>
+      <groupParentPath>/HTC/direccionOperaciones/gerenciaDeArquitecturaYDesarrollo</groupParentPath>
+    </membership>
+    <membership>
+      <userName>ecortez@hightech-corp.com</userName>
+      <roleName>arquitecto</roleName>
+      <groupName>Arquitectura</groupName>
+      <groupParentPath>/HTC/direccionOperaciones/gerenciaDeArquitecturaYDesarrollo</groupParentPath>
+    </membership>
+    <membership>
+      <userName>nnavarro@hightech-corp.com</userName>
+      <roleName>preventa</roleName>
+      <groupName>PreVentas</groupName>
+      <groupParentPath>/HTC/direccionComercial/Ventas</groupParentPath>
+    </membership>
+    <membership>
+      <userName>ycruz@hightech-corp.com</userName>
+      <roleName>preventa</roleName>
+      <groupName>PreVentas</groupName>
+      <groupParentPath>/HTC/direccionComercial/Ventas</groupParentPath>
+    </membership>
+    <membership>
+      <userName>mlopez@hightech-corp.com</userName>
+      <roleName>vendedor</roleName>
+      <groupName>VentasPBS</groupName>
+      <groupParentPath>/HTC/direccionComercial/Ventas</groupParentPath>
+    </membership>
+    <membership>
+      <userName>osilva@hightech-corp.com</userName>
+      <roleName>lider</roleName>
+      <groupName>direccionOperaciones</groupName>
+      <groupParentPath>/HTC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>csalazar@hightech-corp.com</userName>
+      <roleName>lider</roleName>
+      <groupName>gerenciaDeSoporte</groupName>
+      <groupParentPath>/HTC/direccionOperaciones</groupParentPath>
+    </membership>
+    <membership>
+      <userName>opacheco@hightech-corp.com</userName>
+      <roleName>miembro</roleName>
+      <groupName>Testing</groupName>
+      <groupParentPath>/HTC/direccionOperaciones/gerenciaDeArquitecturaYDesarrollo</groupParentPath>
+    </membership>
+    <membership>
+      <userName>epineda@hightech-corp.com.com</userName>
+      <roleName>miembro</roleName>
+      <groupName>Testing</groupName>
+      <groupParentPath>/HTC/direccionOperaciones/gerenciaDeArquitecturaYDesarrollo</groupParentPath>
+    </membership>
+    <membership>
+      <userName>emelendez@hightech-corp.com</userName>
+      <roleName>miembro</roleName>
+      <groupName>Testing</groupName>
+      <groupParentPath>/HTC/direccionOperaciones/gerenciaDeArquitecturaYDesarrollo</groupParentPath>
+    </membership>
+    <membership>
+      <userName>rventura@hightech-corp.com</userName>
+      <roleName>miembro</roleName>
+      <groupName>CRM</groupName>
+      <groupParentPath>/HTC/direccionOperaciones/gerenciaDeSoporte</groupParentPath>
+    </membership>
+    <membership>
+      <userName>sayala@hightech-corp.com</userName>
+      <roleName>arquitecto</roleName>
+      <groupName>Middleware</groupName>
+      <groupParentPath>/HTC/direccionOperaciones/gerenciaDeSoporte</groupParentPath>
+    </membership>
+    <membership>
+      <userName>fhernandez@hightech-corp.com</userName>
+      <roleName>arquitecto</roleName>
+      <groupName>Middleware</groupName>
+      <groupParentPath>/HTC/direccionOperaciones/gerenciaDeSoporte</groupParentPath>
+    </membership>
+    <membership>
+      <userName>srodriguez@hightech-corp.com</userName>
+      <roleName>arquitecto</roleName>
+      <groupName>Arquitectura</groupName>
+      <groupParentPath>/HTC/direccionOperaciones/gerenciaDeArquitecturaYDesarrollo</groupParentPath>
+    </membership>
+    <membership>
+      <userName>karevalo@hightech-corp.com</userName>
+      <roleName>arquitecto</roleName>
+      <groupName>Arquitectura</groupName>
+      <groupParentPath>/HTC/direccionOperaciones/gerenciaDeArquitecturaYDesarrollo</groupParentPath>
+    </membership>
+    <membership>
+      <userName>vhuezo@hightech-corp.com</userName>
+      <roleName>miembro</roleName>
+      <groupName>Software Factory</groupName>
+      <groupParentPath>/HTC/direccionOperaciones/gerenciaDeArquitecturaYDesarrollo</groupParentPath>
+    </membership>
+    <membership>
+      <userName>hmartinez@hightech-corp.com</userName>
+      <roleName>miembro</roleName>
+      <groupName>Testing</groupName>
+      <groupParentPath>/HTC/direccionOperaciones/gerenciaDeArquitecturaYDesarrollo</groupParentPath>
+    </membership>
+    <membership>
+      <userName>lgrimaldi@hightech-corp.com</userName>
+      <roleName>preventa</roleName>
+      <groupName>PreVentas</groupName>
+      <groupParentPath>/HTC/direccionComercial/Ventas</groupParentPath>
+    </membership>
+    <membership>
+      <userName>mzayas@hightech-corp.com</userName>
+      <roleName>arquitecto</roleName>
+      <groupName>BI</groupName>
+      <groupParentPath>/HTC/direccionOperaciones/gerenciaDeSoporte</groupParentPath>
+    </membership>
+    <membership>
+      <userName>mvidal@hightech-corp.com</userName>
+      <roleName>arquitecto</roleName>
+      <groupName>baseDeDatos</groupName>
+      <groupParentPath>/HTC/direccionOperaciones/gerenciaDeSoporte</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>
