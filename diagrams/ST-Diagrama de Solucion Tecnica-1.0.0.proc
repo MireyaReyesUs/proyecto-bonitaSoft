@@ -878,8 +878,13 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_nwzu1pYmEeq2K99SrQ8DiQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
       </elements>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_C-3yoJlIEeqRvP2LHW5_IA" name="solicitudProy" dataType="_IoIKPZF1EeqYh62qYTdhOg" className="com.htc.model.SolicitudProy">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_RhcrQJlIEeqRvP2LHW5_IA" name="initSolicitudProy()" content="def solicitudProyVar = new com.htc.model.SolicitudProy()&#xD;&#xA;solicitudProyVar.nombreProyecto = solicitudProyInput?.nombreProyecto&#xD;&#xA;solicitudProyVar.fechaPresentacion = solicitudProyInput?.fechaPresentacion&#xD;&#xA;solicitudProyVar.salesCloudId = solicitudProyInput?.salesCloudId&#xD;&#xA;solicitudProyVar.salesCloudDate = solicitudProyInput?.salesCloudDate&#xD;&#xA;solicitudProyVar.pipeline = solicitudProyInput?.pipeline&#xD;&#xA;solicitudProyVar.alcance = solicitudProyInput?.alcance&#xD;&#xA;solicitudProyVar.consideracion = solicitudProyInput?.consideracion&#xD;&#xA;return solicitudProyVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.htc.model.SolicitudProy">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_RhcrQZlIEeqRvP2LHW5_IA" name="solicitudProyInput" type="COMPLEX"/>
+        </defaultValue>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_IoIJw5F1EeqYh62qYTdhOg">
-        <targetForm xmi:type="expression:Expression" xmi:id="_IoIJxJF1EeqYh62qYTdhOg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_IoIJxJF1EeqYh62qYTdhOg" name="newForm" content="4a937e24-f430-406c-aaf6-fb71b6eef3f8" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_IoIJxZF1EeqYh62qYTdhOg">
         <targetForm xmi:type="expression:Expression" xmi:id="_IoIJxpF1EeqYh62qYTdhOg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -1065,7 +1070,17 @@
         <condition xmi:type="expression:Expression" xmi:id="_dzrIkpYsEeq2K99SrQ8DiQ" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_IoIKJJF1EeqYh62qYTdhOg" documentation="Este es un ejemplo de actor que está mapeado a cualquier usuario de la organización ACME" name="Employee actor" initiator="true"/>
-      <contract xmi:type="process:Contract" xmi:id="_IoIKJZF1EeqYh62qYTdhOg"/>
+      <contract xmi:type="process:Contract" xmi:id="_IoIKJZF1EeqYh62qYTdhOg">
+        <inputs xmi:type="process:ContractInput" xmi:id="_RhbdIJlIEeqRvP2LHW5_IA" name="solicitudProyInput" type="COMPLEX" dataReference="solicitudProy">
+          <inputs xmi:type="process:ContractInput" xmi:id="_RhcEMJlIEeqRvP2LHW5_IA" name="nombreProyecto"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_RhcEMZlIEeqRvP2LHW5_IA" name="fechaPresentacion" type="LOCALDATE"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_RhcEMplIEeqRvP2LHW5_IA" name="salesCloudId"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_RhcEM5lIEeqRvP2LHW5_IA" name="salesCloudDate" type="LOCALDATE"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_RhcENJlIEeqRvP2LHW5_IA" name="pipeline" type="DECIMAL"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_RhcENZlIEeqRvP2LHW5_IA" name="alcance"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_RhcENplIEeqRvP2LHW5_IA" name="consideracion"/>
+        </inputs>
+      </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_IoIKJpF1EeqYh62qYTdhOg">
         <name xmi:type="expression:Expression" xmi:id="_IoIKJ5F1EeqYh62qYTdhOg" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_IoIKKJF1EeqYh62qYTdhOg" content="" returnTypeFixed="true"/>
