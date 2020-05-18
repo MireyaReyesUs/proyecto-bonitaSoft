@@ -112,6 +112,15 @@
               </parameters>
             </configuration>
           </connectors>
+          <operations xmi:type="expression:Operation" xmi:id="_tJe-QJlIEeqapZnVVpuk4A">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_tJe-QZlIEeqapZnVVpuk4A" name="docsObj" content="docsObj" type="TYPE_VARIABLE" returnType="java.util.List">
+              <referencedElements xmi:type="process:JavaObjectData" xmi:id="_ttcm8JlIEeqapZnVVpuk4A" name="docsObj" dataType="_IoIKO5F1EeqYh62qYTdhOg" className="java.util.List"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_tJe-QplIEeqapZnVVpuk4A" name="documentsSolucionTecnica" content="documentsSolucionTecnica" type="TYPE_DOCUMENT" returnType="java.util.List">
+              <referencedElements xmi:type="process:Document" xmi:id="_uE6rwJlIEeqapZnVVpuk4A" name="documentsSolucionTecnica" multiple="true"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_tJe-Q5lIEeqapZnVVpuk4A" type="ASSIGNMENT"/>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_1wN1g5OgEeqcrv5mpi41Dg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_1wN1hJOgEeqcrv5mpi41Dg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_1wN1hZOgEeqcrv5mpi41Dg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -705,15 +714,30 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_en-J8ZPUEeqcrv5mpi41Dg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_en-J8JPUEeqcrv5mpi41Dg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_en-J8pPUEeqcrv5mpi41Dg" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_wWd3oJlIEeqapZnVVpuk4A">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_wWd3oZlIEeqapZnVVpuk4A" name="objSolicitudPrev" content="objSolicitudPrev" type="TYPE_VARIABLE" returnType="com.htc.model.SolicitudProy">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_wWd3oplIEeqapZnVVpuk4A" name="objSolicitudPrev" dataType="_IoIKPZF1EeqYh62qYTdhOg" className="com.htc.model.SolicitudProy"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_wWd3o5lIEeqapZnVVpuk4A" name="objSolicitudPrevInput.fechaIngreso" content="objSolicitudPrevInput?.fechaIngreso" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.LocalDate">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_wWd3pJlIEeqapZnVVpuk4A" name="objSolicitudPrevInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_wWd3pZlIEeqapZnVVpuk4A" type="JAVA_METHOD" expression="setFechaIngreso">
+              <inputTypes>java.time.LocalDate</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_en-J85PUEeqcrv5mpi41Dg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_en-J9JPUEeqcrv5mpi41Dg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_en-J9ZPUEeqcrv5mpi41Dg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_en-J95PUEeqcrv5mpi41Dg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_en-J9pPUEeqcrv5mpi41Dg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_en-J-ZPUEeqcrv5mpi41Dg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_en-J-pPUEeqcrv5mpi41Dg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_x9BlwJlIEeqapZnVVpuk4A" name="kikoForm" content="ef4796bf-9412-46c2-ab78-2be0bb0fd760" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_en-J-JPUEeqcrv5mpi41Dg"/>
+          <contract xmi:type="process:Contract" xmi:id="_en-J-JPUEeqcrv5mpi41Dg">
+            <inputs xmi:type="process:ContractInput" xmi:id="_wWdQkJlIEeqapZnVVpuk4A" name="objSolicitudPrevInput" type="COMPLEX" dataReference="objSolicitudPrev" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_wWdQkZlIEeqapZnVVpuk4A" name="fechaIngreso" type="LOCALDATE" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_en-J-5PUEeqcrv5mpi41Dg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_lzOPsJPUEeqcrv5mpi41Dg" name="Notificación  fecha Reunión kick Off" outgoing="_lzWLgJPUEeqcrv5mpi41Dg" incoming="_eoKXMJPUEeqcrv5mpi41Dg">
