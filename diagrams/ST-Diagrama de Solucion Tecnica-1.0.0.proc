@@ -50,7 +50,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_IoHimZF1EeqYh62qYTdhOg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_IoHimpF1EeqYh62qYTdhOg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:ServiceTask" xmi:id="_5jD1AJOgEeqcrv5mpi41Dg" name="Notificación reunión Kick Off" outgoing="_PRbzsJOmEeqcrv5mpi41Dg" incoming="_IoIJ1pF1EeqYh62qYTdhOg">
+        <elements xmi:type="process:ServiceTask" xmi:id="_5jD1AJOgEeqcrv5mpi41Dg" name="Notificación Reunión de Kick Off" outgoing="_PRbzsJOmEeqcrv5mpi41Dg" incoming="_IoIJ1pF1EeqYh62qYTdhOg">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_1wN1gZOgEeqcrv5mpi41Dg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_1wN1gJOgEeqcrv5mpi41Dg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_1wN1gpOgEeqcrv5mpi41Dg" name="" content="" returnTypeFixed="true"/>
