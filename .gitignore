@@ -39,11 +39,11 @@
 /web_page/.metadata
 
 # Output of web component build
-/web_widgets/*/*.js
-/web_page/*/js
+#/web_widgets/*/*.js
+#/web_page/*/js
 
 # Web widgets provided by Bonita in the UI Designer.
-/web_widgets/pb*/
+#/web_widgets/pb*/
 
 # Gradle (can be used for example to build and package REST API extensions).
 

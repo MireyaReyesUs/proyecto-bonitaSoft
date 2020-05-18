@@ -40,7 +40,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_IoHiYZF1EeqYh62qYTdhOg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_IoHiYpF1EeqYh62qYTdhOg" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:ServiceTask" xmi:id="_IoHikpF1EeqYh62qYTdhOg" name="Obtener lista de Preventa" outgoing="_IoIKHpF1EeqYh62qYTdhOg" incoming="_IoIJypF1EeqYh62qYTdhOg">
+        <elements xmi:type="process:ServiceTask" xmi:id="_IoHikpF1EeqYh62qYTdhOg" name="Obtener Lista de Preventa" outgoing="_IoIKHpF1EeqYh62qYTdhOg" incoming="_IoIJypF1EeqYh62qYTdhOg">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_IoHik5F1EeqYh62qYTdhOg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_IoHilJF1EeqYh62qYTdhOg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_IoHilZF1EeqYh62qYTdhOg" name="" content="" returnTypeFixed="true"/>
