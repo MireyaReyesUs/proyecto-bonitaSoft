@@ -182,7 +182,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_Sr62lYNWEeqC-bPk6jOuuw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_Sr62loNWEeqC-bPk6jOuuw" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:XORGateway" xmi:id="_Sr62l4NWEeqC-bPk6jOuuw" name="¿Requiere Validación operativa?" outgoing="_Sr8EqYNWEeqC-bPk6jOuuw _Sr8ExINWEeqC-bPk6jOuuw" incoming="_Sr8E14NWEeqC-bPk6jOuuw">
+        <elements xmi:type="process:XORGateway" xmi:id="_Sr62l4NWEeqC-bPk6jOuuw" name="¿Requiere validación operativa?" outgoing="_Sr8EqYNWEeqC-bPk6jOuuw _Sr8ExINWEeqC-bPk6jOuuw" incoming="_Sr8E14NWEeqC-bPk6jOuuw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_Sr62mINWEeqC-bPk6jOuuw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_Sr62mYNWEeqC-bPk6jOuuw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_Sr62moNWEeqC-bPk6jOuuw" name="" content="" returnTypeFixed="true"/>
