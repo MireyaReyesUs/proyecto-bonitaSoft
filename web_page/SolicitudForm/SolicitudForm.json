@@ -3,7 +3,7 @@
   "previousDesignerVersion" : "1.8.40",
   "id" : "SolicitudForm",
   "name" : "SolicitudForm",
-  "lastUpdate" : 1587418290603,
+  "lastUpdate" : 1589327243635,
   "rows" : [
     [
       {
@@ -3704,6 +3704,55 @@
                                 "type" : "constant",
                                 "value" : false
                               },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "<b>Usuario:</b><br> {{e_usuario}}\n<br><br><b>formInput:</b><br> {{formInput}}\n<br><br>\n<b>formOutput:</b><br> {{formOutput}}\n<br><br>\n<b>Contrato de Multiple Documenos:</b><br> {{formInput.myMultipleDocumentsContract}}\n<br><br>\n<b>lstDocumento:</b><br> {{formInput.objSolicitudInput.lstDocumentos}}\n<br><br>\n<b>e_prioridadClienteSel:</b><br> {{e_prioridadClienteSel}}\n<br><br>\n<b>e_tipoClienteSel:</b><br> {{e_tipoClienteSel}}\n<br><br>\n<b>e_grupoPreventa:</b><br> {{e_grupoPreventa}}\n<br><br>\n<b>e_grupoVenta:</b><br> {{e_grupoVenta}}\n<br><br>\n<b>Vendedores:</b><br> {{e_vendedor}}\n<br><br>\n<b>Roles:</b><br> {{e_roles}}\n<br><br>\n<b>v_Preventa:</b><br> {{v_preventaSeleccionado}}\n<br><br>\n<b>e_lstTipoDocumento:</b><br> {{e_lstTipoDocumento}}\n<br><br>\n<b>e_lstTipoDocumentoExtra:</b><br> {{e_lstTipoDocumentoExtra}}\n<br><br>\n<b>e_userDetails</b>\n<br>\n{{e_userDetails}}\n<br><br>\n<b>v_conts</b>\n<br>\n{{v_conts}}"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : ""
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              }
+                            },
+                            "reference" : "109554c2-61ed-4dc5-87db-11b757a40d0c",
+                            "hasValidationError" : false,
+                            "id" : "pbText"
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
                               "required" : {
                                 "type" : "constant",
                                 "value" : false
@@ -3761,55 +3810,6 @@
                             "reference" : "bd457fa2-a709-429a-94d7-2162d56467dc",
                             "hasValidationError" : false,
                             "id" : "pbInput"
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "xs" : 12
-                            },
-                            "propertyValues" : {
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "allowHTML" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "<b>Usuario:</b><br> {{e_usuario}}\n<br><br><b>formInput:</b><br> {{formInput}}\n<br><br>\n<b>formOutput:</b><br> {{formOutput}}\n<br><br>\n<b>Contrato de Multiple Documenos:</b><br> {{formInput.myMultipleDocumentsContract}}\n<br><br>\n<b>lstDocumento:</b><br> {{formInput.objSolicitudInput.lstDocumentos}}\n<br><br>\n<b>e_prioridadClienteSel:</b><br> {{e_prioridadClienteSel}}\n<br><br>\n<b>e_tipoClienteSel:</b><br> {{e_tipoClienteSel}}\n<br><br>\n<b>e_grupoPreventa:</b><br> {{e_grupoPreventa}}\n<br><br>\n<b>e_grupoVenta:</b><br> {{e_grupoVenta}}\n<br><br>\n<b>Vendedores:</b><br> {{e_vendedor}}\n<br><br>\n<b>Roles:</b><br> {{e_roles}}\n<br><br>\n<b>v_Preventa:</b><br> {{v_preventaSeleccionado}}\n<br><br>\n<b>e_lstTipoDocumento:</b><br> {{e_lstTipoDocumento}}\n<br><br>\n<b>e_lstTipoDocumentoExtra:</b><br> {{e_lstTipoDocumentoExtra}}\n<br><br>\n<b>e_userDetails</b>\n<br>\n{{e_userDetails}}\n<br><br>\n<b>v_conts</b>\n<br>\n{{v_conts}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : ""
-                              },
-                              "labelPosition" : {
-                                "type" : "constant",
-                                "value" : "top"
-                              },
-                              "labelWidth" : {
-                                "type" : "constant",
-                                "value" : 4
-                              }
-                            },
-                            "reference" : "109554c2-61ed-4dc5-87db-11b757a40d0c",
-                            "hasValidationError" : false,
-                            "id" : "pbText"
                           }
                         ]
                       ]
